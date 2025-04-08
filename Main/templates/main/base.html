@@ -19,16 +19,25 @@
 <div class="bg-light py-2 border-bottom">
   <div class="container d-flex justify-content-between align-items-center">
     <div>
-      <small>Contact : <a href="mailto:notreMail@gmail.com">Notre addresse</a></small>
+      <small>Contact : <a href="mailto:notreMail@gmail.com">Notre adresse</a></small>
     </div>
-    <div>
+    <div class="d-flex align-items-center">
+      <!-- Barre de recherche -->
+      <form class="d-flex" action="#" method="GET">
+        <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search" name="q">
+        <button class="btn" style="background-color: #343a40; color: white; margin-left: 8px;" type="submit">OK</button>
+      </form>
+
       <!-- Icônes de réseaux sociaux -->
-      <a href="#" class="text-secondary me-3"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="text-secondary me-3"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+      <div class="ms-4">
+        <a href="#" class="text-secondary me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-secondary me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 </div>
+
 
 <!-- Barre de navigation principale -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -54,10 +63,6 @@
         <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Nous rejoindre</a></li>
       </ul>
-      <form class="d-flex ms-3" action="#" method="GET">
-        <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search" name="q">
-        <button class="btn btn-primary ms-2" type="submit">OK</button>
-      </form>
     </div>
   </div>
 </nav>
