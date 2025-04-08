@@ -1,0 +1,129 @@
+/* main/static/main/css/styles.css */
+
+/* Palette dynamique et cohérente */
+:root {
+  /* --primary-color: #007BFF;      Bleu dynamique pour l'action */
+  --primary-hover: #e3e8ed; /* Variante plus sombre pour le survol */
+  --secondary-color: #e3e9e5; /* Vert pour l'accessibilité et la liberté */
+  --accent-color: #ffc107; /* Jaune accent pour attirer l'attention */
+  --text-color: #141010; /* Texte foncé pour une bonne lisibilité */
+  --background-color: #f8f9fa; /* Fond clair pour la cohésion */
+  --card-bg: #ffffff; /* Fond blanc pour les cartes */
+  --nav-bg: #343a40; /* Fond sombre pour la barre de navigation */
+  --footer-bg: #343a40; /* Fond sombre pour le pied de page */
+}
+
+/* Style global */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Barre de navigation */
+.navbar {
+  background-color: blue;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: var(--secondary-color) !important;
+}
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+/* couleur du lien pour la barre du haut */
+.top-bar-link {
+  color: #555;
+  text-decoration: none;
+}
+
+.top-bar-link:hover {
+  color: #000;
+}
+
+/* Redimensionner le logo */
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Carousel */
+.carousel-item img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Cartes */
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+}
+
+/* Style pour le formulaire de recherche */
+form input[type="search"] {
+  border-radius: 0.25rem;
+}
+
+/* Styles pour la section Notre Structure Communautaire */
+.rounded-circle {
+  transition: all 0.3s ease;
+}
+
+.bg-white:hover .rounded-circle {
+  transform: scale(1.1);
+  background-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+.bg-white {
+  transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Amélioration des cartes des domaines d'intervention */
+.card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card img {
+  transition: all 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
