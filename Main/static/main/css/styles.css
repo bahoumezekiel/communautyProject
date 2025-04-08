@@ -71,8 +71,8 @@ body {
 .card {
   background-color: var(--card-bg);
   border: none;
-  border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 20px;
+  transition: transform 0.8s, box-shadow 0.8s;
 }
 .card:hover {
   transform: translateY(-5px);
