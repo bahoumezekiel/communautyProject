@@ -113,6 +113,18 @@ form input[type="search"] {
 .card {
   transition: all 0.3s ease;
   overflow: hidden;
+  padding: 0; 
+  background-color: transparent; 
+  border: none; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+  border-radius: 0;
+  transition: all 0.5s ease;
 }
 
 .card:hover {
@@ -120,10 +132,7 @@ form input[type="search"] {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-.card img {
-  transition: all 0.5s ease;
-}
-
 .card:hover img {
   transform: scale(1.05);
 }
+
