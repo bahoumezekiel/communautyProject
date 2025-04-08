@@ -1,0 +1,182 @@
+{% extends 'main/base.html' %} {% load static %} {% block title %}Accueil |
+Communauté Tech{% endblock %} {% block content %}
+<div class="text-center">
+  <!-- Section Carousel (placeholder pour l'instant) -->
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide mb-5"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://via.placeholder.com/1200x400"
+          class="d-block w-100"
+          alt="Image 1"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://via.placeholder.com/1200x400"
+          class="d-block w-100"
+          alt="Image 2"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://via.placeholder.com/1200x400"
+          class="d-block w-100"
+          alt="Image 3"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Section Présentation -->
+  <h1>Bienvenue sur la plateforme Communautaire</h1>
+  <p class="lead">
+    Un espace dédié aux passionnés d'informatique, IA, cybersécurité et
+    développement logiciel.
+  </p>
+
+  <!-- Notre Structure Communautaire Section -->
+  <section class="py-5 bg-light my-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Notre Structure Communautaire</h2>
+
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-3 shadow-sm h-100 text-center">
+            <div
+              class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            >
+              <i class="fas fa-graduation-cap text-primary fs-3"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-3">Formation Continue</h3>
+            <p class="text-muted">
+              Programmes de formation rotatifs en développement d'applications,
+              cybersécurité et analyse de données avec ressources partagées.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-3 shadow-sm h-100 text-center">
+            <div
+              class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            >
+              <i class="fas fa-trophy text-primary fs-3"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-3">Compétitions</h3>
+            <p class="text-muted">
+              Préparation et participation aux hackathons avec des équipes
+              multidisciplinaires pour maximiser vos chances de succès.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-3 shadow-sm h-100 text-center">
+            <div
+              class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            >
+              <i class="fas fa-hand-holding-usd text-primary fs-3"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-3">Financement Collaboratif</h3>
+            <p class="text-muted">
+              Cotisation mensuelle (1000 FCFA) pour acheter des formations et
+              livres partagés par toute la communauté.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Domaines d'intervention -->
+  <h2 class="mt-5">Nos domaines d'intervention</h2>
+  <div class="row mt-4 g-4">
+    <!-- Exemple de bloc pour un domaine -->
+    <div class="col-md-3">
+      <div class="card p-3 shadow h-100">
+        <img
+          src="{% static 'main/images/IA.jpg' %}"
+          alt="Intelligence Artificielle"
+          class="img-fluid mb-3"
+        />
+        <p class="mb-0">Intelligence Artificielle</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 shadow h-100">
+        <img
+          src="{% static 'main/images/UX.jpg' %}"
+          alt="UX Design"
+          class="img-fluid mb-3"
+        />
+        <p class="mb-0">UX DESIGNER</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 shadow h-100">
+        <img
+          src="{% static 'main/images/cybersecurity.jpg' %}"
+          alt="Cybersecurity"
+          class="img-fluid mb-3"
+        />
+        <p class="mb-0">Cybersécurité</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3 shadow h-100">
+        <img
+          src="{% static 'main/images/programmation.jpg' %}"
+          alt="Programmation"
+          class="img-fluid mb-3"
+        />
+        <p class="mb-0">Développement Logiciel</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

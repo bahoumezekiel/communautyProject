@@ -1,0 +1,20 @@
+# .gitignore
+
+# Fichiers et dossiers de l'environnement virtuel
+venv/
+*.pyc
+__pycache__/
+
+# Fichiers de configuration locaux et secrets
+*.env
+local_settings.py
+
+# Fichiers de log
+*.log
+
+# Fichiers de migrations générés par Django (à partager ou non selon tes préférences)
+# Si tu souhaites les partager, retire cette ligne.
+main/migrations/
+
+# Fichiers statiques compilés
+/staticfiles/
