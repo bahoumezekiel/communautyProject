@@ -1,0 +1,76 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}A propos de nous |Communauté Tech{% endblock %}
+
+{% block content %}
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="mb-4">À propos de nous</h1>
+    <p class="lead">Bienvenue sur notre plateforme communautaire technologique dédiée à l'innovation, l'apprentissage et la collaboration entre passionnés du numérique.</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-4">
+        <h4>Notre mission</h4>
+        <p>Fédérer une communauté dynamique autour des technologies modernes et offrir un espace de partage, de formation et de développement de projets concrets.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Notre vision</h4>
+        <p>Devenir une référence dans la promotion des talents technologiques en Afrique, en facilitant l'accès aux outils numériques et à l'innovation.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Nos valeurs</h4>
+        <ul class="list-unstyled">
+          <li>🤝 Collaboration</li>
+          <li>🚀 Innovation</li>
+          <li>📚 Partage des connaissances</li>
+          <li>🌍 Impact social</li>
+          <li>👨‍🎓 Participations aux concours et hackathons</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white" id="historique">
+  <div class="container">
+    <h2 class="text-center mb-5">Historique de la communauté</h2>
+    <div class="frise-chronologique">
+      <div class="evenements">
+        <div class="evenement">
+          <div class="date">2024'</div>
+          <div class="bulle">
+            <h5>Naissance de l’idée</h5>
+            <p>Création du concept de communauté autour de la technologie au Burkina Faso.</p>
+          </div>
+        </div>
+        <div class="evenement">
+          <div class="date">Mars-2025</div>
+          <div class="bulle">
+            <h5>Structuration de l’équipe</h5>
+            <p>Recrutement des premiers membres et mise en place des canaux de communication.</p>
+          </div>
+        </div>
+        <div class="evenement">
+          <div class="date">2025</div>
+          <div class="bulle">
+            <h5>Lancement officiel de la plateforme</h5>
+            <p>Mise en ligne de notre site communautaire et démarrage des premiers projets.</p>
+          </div>
+        </div>
+        <div class="evenement">
+          <div class="date">2024</div>
+          <div class="bulle">
+            <h5>Formations et partenariats</h5>
+            <p>Organisation de formations gratuites et signature de plusieurs partenariats stratégiques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
