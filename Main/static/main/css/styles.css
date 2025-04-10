@@ -22,8 +22,53 @@ body {
   padding: 0;
 }
 
+/* Espacement des éléments du menu */
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+/* Style personnalisé pour les liens de navigation */
+.custom-nav-link {
+  position: relative;
+  color: #212529 !important;
+  padding-bottom: 5px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Effet au survol */
+.custom-nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Effet au survol avec ligne qui apparaît */
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Style pour la page active - à ajouter via JavaScript */
+.custom-nav-link.active {
+  color: #007bff !important;
+  font-weight: 600;
+}
+
+.custom-nav-link.active::after {
+  width: 100%;
+}
+
 /* Barre de navigation */
 .navbar {
+  height: 80px;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 0 0 20px 20px;
@@ -32,6 +77,13 @@ body {
   font-weight: bold;
   color: var(--secondary-color) !important;
 }
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+  max-height: 70px; /* s’assure qu’il ne dépasse pas la navbar */
+}
+
 .nav-link {
   color: var(--text-color) !important;
 }
