@@ -8,3 +8,6 @@ def home(request):
 
 def apropos_view(request):
     return render(request, 'main/apropos.html')
+
+def menu_deroulant_view(request):
+    return render(request, 'main/menu_deroulant')
