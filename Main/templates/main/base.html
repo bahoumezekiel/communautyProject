@@ -111,10 +111,17 @@
               <a class="nav-link" href="#">Actualités</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="#">Agenda</a>
-            </li>
+              <a
+                class="nav-link {% if request.path == '/calendrier/' %}active{% endif %}"
+                href="{% url 'calendrier' %}"
+                >Agenda</a
+              >
             <li class="nav-item mx-1">
-              <a class="nav-link" href="#">Nous rejoindre</a>
+              <a
+                class="nav-link {% if request.path == '/rejoindre/' %}active{% endif %}"
+                href="{% url 'rejoindre' %}"
+                >Nous rejoindre</a
+              >
             </li>
           </ul>
         </div>
