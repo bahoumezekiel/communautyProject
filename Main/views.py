@@ -8,6 +8,3 @@ def home(request):
 
 def apropos_view(request):
     return render(request, 'main/apropos.html')
-
-def rejoindre_view(request):
-    return render(request, 'main/rejoindre.html')
