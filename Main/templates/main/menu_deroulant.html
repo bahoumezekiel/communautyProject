@@ -1,68 +1,64 @@
-<div class="menu-contenu">
-  <div class="menu-grille">
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/menu_deroulant.css' %}">
+
+<div class="menu-contenu" align="center">
+  <div class="menu-grille" align="center">
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/apropos.png' %}" alt="A propos" class="menu-icone">
       <div class="menu-texte">
-        <h3>A propos de nous</h3>
-        <a href="{% url 'apropos' %}"></a>
-        <p></p>
+        <h3>A propos</h3>
+        <p>tout ce qu'il faut savoir</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/premierpas.png' %}" alt="Premier pas" class="menu-icone">
       <div class="menu-texte">
-        <h3>Premiers pas</h3>
-        <a href="#"></a>
-        <p></p>
+        <h3>Premier Pas</h3>
+        <p>vous accompagner</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/qualite.png' %}" alt="Qualité" class="menu-icone">
       <div class="menu-texte">
         <h3>Qualité</h3>
-        <a href="#"></a>
-        <p></p>
+        <p>Qualité de nos programmes...</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
-      <div class="menu-texte">
-        <h3>Accessibilité</h3>
-        <a href="#"></a>
-        <p></p>
-      </div>
-    </div>
-    <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/communication.png' %}" alt="Communication" class="menu-icone">
       <div class="menu-texte">
         <h3>Communication</h3>
-        <a href="#"></a>
-        <p></p>
+        <p>La communication, c'est la clé ...</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/accecibilite.png' %}" alt="Accessibilité" class="menu-icone">
       <div class="menu-texte">
-        <h3>Réglementation</h3>
-        <a href="#"></a>
-        <p></p>
+        <h3>Accessibilité</h3>
+        <p>Respect de la diversité, inclusion et accessibilité...</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/reglementation.png' %}" alt="RèglementationD" class="menu-icone">
       <div class="menu-texte">
-        <h3>Boîte à outils</h3>
-        <a href="#"></a>
-        <p></p>
+        <h3>Règlementation</h3>
+        <p>Marcher selon les principes</p>
       </div>
     </div>
+
     <div class="menu-item">
-      <div class="menu-icone"></div>
+      <img src="{% static 'main/images/icons/archive.png' %}" alt="Archives" class="menu-icone">
       <div class="menu-texte">
         <h3>Archives</h3>
-        <a href="#"></a>
-        <p></p>
+        <p>Classement des publications par année, thème, auteur...</p>
       </div>
     </div>
+
   </div>
 </div>

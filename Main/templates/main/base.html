@@ -102,7 +102,11 @@
               >
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="#">Platefome</a>
+              <a
+                class="nav-link {% if request.path == '/menu_deroulant/' %}active{% endif %}"
+                href="{% url 'menu_deroulant' %}"
+                >Plateforme</a
+              >
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link" href="#">Ressources</a>
