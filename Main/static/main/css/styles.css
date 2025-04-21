@@ -2,16 +2,21 @@
 
 /* Palette dynamique et cohérente */
 :root {
-  /* --primary-color: #007BFF;      Bleu dynamique pour l'action */
-  --primary-hover: #e3e8ed; /* Variante plus sombre pour le survol */
-  --secondary-color: #e3e9e5; /* Vert pour l'accessibilité et la liberté */
-  --accent-color: #ffc107; /* Jaune accent pour attirer l'attention */
-  --text-color: #141010; /* Texte foncé pour une bonne lisibilité */
-  --background-color: #f8f9fa; /* Fond clair pour la cohésion */
-  --card-bg: #ffffff; /* Fond blanc pour les cartes */
-  --nav-bg: #343a40; /* Fond sombre pour la barre de navigation */
-  --footer-bg: #343a40; /* Fond sombre pour le pied de page */
+  --primary-color: #007BFF; 
+  --primary-hover: #0056b3; 
+  --secondary-color: #28a745;
+  --accent-color: #ffc107;
+  --text-color: #212529;
+  --background-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --nav-bg: #343a40;
+  --footer-bg: #212529;
 }
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 
 /* Style global */
 body {
@@ -106,14 +111,22 @@ body {
 }
 
 /* Boutons */
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  border: none;
+  color: white;
 }
+
 .btn-primary:hover {
   background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
 }
+
 
 /* Carousel */
 .carousel-item img {
