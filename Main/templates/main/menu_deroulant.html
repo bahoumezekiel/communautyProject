@@ -1,4 +1,9 @@
+{% extends 'main/base.html' %}
+ {% load static %}
+  {% block title %}Plateforme{% endblock %}
+
 {% load static %}
+{% block content %}
 <link rel="stylesheet" href="{% static 'main/css/menu_deroulant.css' %}">
 
 <div class="menu-contenu" align="center">
@@ -62,3 +67,4 @@
 
   </div>
 </div>
+{% endblock %}

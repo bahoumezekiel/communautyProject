@@ -1,4 +1,8 @@
+{% extends 'main/base.html' %}
+ {% load static %}
+  {% block title %}Agenda{% endblock %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -65,10 +69,10 @@
     }
 
     .event-list li {
-      background-color: #f5f5f5;
+      background-color:rgba(12, 74, 207, 0.77);
       margin-bottom: 10px;
       padding: 10px;
-      border-left: 4px solid #00bcd4;
+      border-left: 4px solid rgb(212, 0, 0);
     }
   </style>
   <script>
@@ -103,3 +107,4 @@
 
 </body>
 </html>
+{% endblock %}
