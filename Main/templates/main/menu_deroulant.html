@@ -7,10 +7,20 @@
 <link rel="stylesheet" href="{% static 'main/css/menu_deroulant.css' %}">
 
 <div class="menu-contenu" align="center">
+  <img src="main/images/icons/plateforme.svg" alt="plateforme" class="image-avant-grille">
   <div class="menu-grille" align="center">
 
+    <a href="#" class="menu-item">
+      <img src="{% static 'main/images/icons/biblio.jpg' %}" alt="bibliothèque" class="menu-icone">
+      <div class="menu-texte">
+        <h3>Bibliothèque Numerique</h3>
+        <p>Des ressources numériques disponibles dans notre bibliothèque</p>
+      </div>
+    </a>
+
+
     <a href="/apropos/" class="menu-item">
-      <img src="{% static 'main/images/icons/apropos.png' %}" alt="A propos" class="menu-icone">
+      <img src="{% static 'main/images/icons/apropos.jpg' %}" alt="A propos" class="menu-icone">
       <div class="menu-texte">
         <h3>A propos</h3>
         <p>tout ce qu'il faut savoir</p>

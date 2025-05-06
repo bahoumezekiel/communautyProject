@@ -1,4 +1,4 @@
-.menu-contenu {
+/* .menu-contenu {
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -24,7 +24,7 @@
   background-color: #f9f9f9;
   /* border-left: 5px  #5d6cee; */
   /* border-radius: 10px; */
-  padding: 1.5rem;
+  /* padding: 1.5rem;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease;
@@ -51,4 +51,82 @@
 .menu-texte p {
   font-size: 0.95rem;
   color: #555;
+} */ */
+
+
+
+
+/* Améliorations générales du contenu principal */
+.menu-contenu {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem; /* Augmentation du padding pour plus d'espace */
+  background-color: #f4f6f8; /* Un gris clair subtil pour un fond moins brut */
+}
+
+.menu-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  width: 100%;
+  max-width: 960px; /* Légère augmentation de la largeur max pour un aspect moins étroit */
+  justify-items: center;
+  gap: 2.5rem; /* Légère augmentation du gap pour plus d'espace entre les blocs */
+}
+
+/* Embellissement des blocs de fonctionnalités */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* Fond blanc pour les blocs */
+  border-radius: 12px; /* Bords plus arrondis pour un aspect plus doux */
+  padding: 2rem; /* Augmentation du padding intérieur */
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Ombre plus douce et plus étendue */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transition plus fluide pour l'effet de survol */
+  border-top: 4px solid #5d6cee; /* Ajout d'une bordure colorée discrète en haut */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Effet de survol plus marqué */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+}
+
+.menu-icone {
+  width: 70px; /* Légère augmentation de la taille de l'icône */
+  height: 70px; /* Légère augmentation de la taille de l'icône */
+  margin-bottom: 1.2rem;
+  color: #5d6cee; /* Vous pouvez potentiellement styliser l'icône directement ici si ce sont des SVG in-line */
+  /* Si ce sont des images SVG, vous devrez peut-être les styliser via du CSS plus spécifique ou directement dans le SVG */
+}
+
+/* Style du texte */
+.menu-texte h3 {
+  font-size: 1.3rem; /* Légère augmentation de la taille du titre */
+  margin-bottom: 0.7rem;
+  color: #333; /* Couleur de titre plus sombre */
+  font-weight: 700; /* Titre plus en gras */
+  text-transform: none; /* Suppression de la mise en majuscule pour un aspect plus moderne */
+  letter-spacing: 0.02em; /* Léger espacement des lettres */
+}
+
+.menu-texte p {
+  font-size: 1rem; /* Légère augmentation de la taille du paragraphe */
+  color: #666; /* Couleur de paragraphe légèrement plus claire */
+  line-height: 1.6; /* Amélioration de la lisibilité du texte */
+}
+
+/* Ajout d'un style pour mettre en avant le texte au survol (optionnel) */
+.menu-item:hover .menu-texte h3 {
+  color: #5d6cee; /* Changement de couleur du titre au survol */
+}
+
+.image-avant-grille {
+  display: block; /* Pour que l'image prenne toute la largeur disponible par défaut */
+  width: 100%; /* Pour que l'image s'adapte à la largeur de son parent */
+  max-width: 960px; /* Pour ne pas dépasser la largeur maximale de la grille (ou une autre valeur souhaitée) */
+  margin: 0 auto 2rem auto; /* Centrer l'image horizontalement et ajouter une marge en bas pour l'espacer de la grille */
+  border-radius: 8px; /* Optionnel : pour des bords arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04); /* Optionnel : pour une légère ombre */
 }
