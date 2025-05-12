@@ -1,0 +1,85 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Actualités</h1>
+    
+    <!-- Section Articles Épinglés -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2>À la Une</h2>
+            <div class="card-deck">
+                {% for article in articles_epingles %}
+                <div class="card">
+                    {% if article.image %}
+                    <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.titre }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ article.titre }}</h5>
+                        <p class="card-text">{{ article.contenu|truncatewords:20 }}</p>
+                        <a href="{% url 'detail_actualite' article.id %}" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filtres de Catégories -->
+    <div class="row mb-3">
+        <div class="col-12">
+            <div class="btn-group" role="group" aria-label="Catégories">
+                {% for categorie in categories %}
+                <a href="{% url 'liste_actualites' %}?categorie={{ categorie.id }}" 
+                   class="btn btn-outline-secondary">{{ categorie.nom }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Liste des Actualités -->
+    <div class="row">
+        {% for actualite in actualites %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                {% if actualite.image %}
+                <img src="{{ actualite.image.url }}" class="card-img-top" alt="{{ actualite.titre }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ actualite.titre }}</h5>
+                    <p class="card-text">{{ actualite.contenu|truncatewords:30 }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">{{ actualite.date_publication|date:"d F Y" }}</small>
+                        <a href="{% url 'detail_actualite' actualite.id %}" class="btn btn-sm btn-outline-primary">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <!-- Pagination -->
+    <nav aria-label="Navigation des actualités" class="mt-4">
+        <ul class="pagination justify-content-center">
+            {% if actualites.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ actualites.previous_page_number }}">Précédent</a>
+            </li>
+            {% endif %}
+            
+            {% for num in actualites.paginator.page_range %}
+            <li class="page-item {% if num == actualites.number %}active{% endif %}">
+                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+            </li>
+            {% endfor %}
+            
+            {% if actualites.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ actualites.next_page_number }}">Suivant</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+{% endblock %}

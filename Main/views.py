@@ -17,3 +17,6 @@ def menu_deroulant_view(request):
 
 def calendrier_view(request):
     return render(request, 'main/calendrier.html')
+
+def news_views(request):
+    return render(request, 'main/news.html')

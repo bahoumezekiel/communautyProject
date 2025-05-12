@@ -112,7 +112,10 @@
               <a class="nav-link" href="#">Ressources</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="#">Actualités</a>
+              <a
+                class="nav-link {% if request.path == '/news/' %}active{% endif %}"
+                href="{% url 'news' %}"
+                >A La Une </a>
             </li>
             <li class="nav-item mx-1">
               <a
